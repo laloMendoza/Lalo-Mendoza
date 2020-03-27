@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <header class="site-header inicio">
+
+    <header class="site-header nosotros">
         <div class="contenedor contenido-header">
             <div class="barra">
                 <a href="/">
@@ -24,97 +25,62 @@
                     <a href="contacto.html">Contacto</a>
                 </nav>
             </div>
-            <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+            
         </div>
     </header>
 
-    <section class="contenedor seccion">
-        
-        <h2 class="fw300 centrar-texto">Más Sobre Nosotros</h2>
-        
-        <div class="iconos-nosotros">
-            
-            <div class="iconos">
-                <img src="img/icono1.svg" alt="Icono Seguridad">
-                <h3>Seguridad</h3>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-                    velit facilis corrupti neque cumque, aut distinctio deleniti. Ipsum ullam,
-                    distinctio quia expedita,
-                    modi omnis provident ab facere consequuntur voluptas laboriosam.</p>
-            </div>
-            
-            <div class="iconos">
-                <img src="img/icono2.svg" alt="Icono El mejor precio">
-                <h3>El mejor precio</h3>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-                    velit facilis corrupti neque cumque, aut distinctio deleniti. Ipsum ullam,
-                    distinctio quia expedita,
-                    modi omnis provident ab facere consequuntur voluptas laboriosam.</p>
-            </div>
-            
-            <div class="iconos">
-                <img src="img/icono3.svg" alt="Icono A Tiempo">
-                <h3>A Tiempo</h3>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-                    velit facilis corrupti neque cumque, aut distinctio deleniti. Ipsum ullam,
-                    distinctio quia expedita,
-                    modi omnis provident ab facere consequuntur voluptas laboriosam.
-                </p>
-            </div>
-        
-        </div>
-    </section>
 
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw300 centrar-texto">Llena El Formulario De Contacto</h2>
+        <form class="contacto" action="">
 
-    <main class="seccion contenedor">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <p>Nombre:</p>
+                <input type="name" id="Nombre" placeholder="Tu nombre">
+                <p>E-mail:</p>
+                <input type="name" id="E-mail" placeholder="Tu email">
+                <p>Teléfono:</p>
+                <input type="name" id="Teléfono" placeholder="Tu telefono">
+                <p>Mensaje</p>
+                <textarea name="Mensajes" id="Mensajes" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Información Sobre propiedad</legend>
+                <p>vende o compra</p>
+                <select name="vende o compra">
+    <option value="0">--Seleccione--</option>
+                    <option value="1">vendo</option>
+                    
+                    <option value="2">compro</option>
+                    </select>
+                    <p>Presupuesto</p>
+                    <input type="char" id="Presupuesto">
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Cómo deseas ser contactado?</p>
+                <div class="radios">
+                    <label for="telefono">Teléfono</label>
+                    <input type="radio" name="contacto" value="telefono" id="telefono">
 
-        <h2 class="fw300 centrar-texto">Casas y Depas en Venta</h2>
-
-        <div class="contenedor-anuncios">
-
-            <div class="anuncio">
-                <img src="img/anuncio1.jpg" alt="Anuncio casa en el lago">
-                <div class="contenido-anuncio">
-                    <h3>Casa de Lujo en el Lago</h3>
-                    <p>Casa en el Lago Con Excelente Vista, acabados de lujo a un Excelente Precio</p>
-                    <p class="precio">$3,000,000</p>
-                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" value="correo" id="correo">
                 </div>
-            </div>
+                <p>Si eligió Teléfono, elija la fecha y la hora:</p>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
 
-            <div class="anuncio">
-                <img src="img/anuncio2.jpg" alt="Anuncio terminados de lujo">
-                <div class="contenido-anuncio">
-                    <h3>Casa Terminados de Lujo</h3>
-                    <p>Casa con dieño moderno, asi como tecnologia inteligente y amueblada</p>
-                    <p class="precio">$2,000,000</p>
-                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
-                </div>
-            </div>
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
 
-            <div class="anuncio">
-                <img src="img/anuncio3.jpg" alt="Anuncio casa con alberca">
-                <div class="contenido-anuncio">
-                    <h3>Casa con Alberca</h3>
-                    <p>Casa con alberca y acados de lujo en la ciudad, excelente oportunidad</p>
-                    <p class="precio">$3,000,000</p>
-                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
-                </div>
-            </div>
-        </div>
-        <a href="anuncios.html" class="boton boton-verde">ver todas</a>
+
+            </fieldset>
+            <input type="submit" class="boton boton-verde">
+
+        </form>
     </main>
 
-    <section class="imagen-contacto">
-        <div class="contenedor contenido-contacto">
-        <h2>Encuentra la casa de tus sueños</h2>
-        <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad</p>
-
-        <a href="contacto.html" class="boton boton-amarillo">Contactanos</a>
-    </div>
-    </section>
-
-   
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
         <nav class="navegacion">
